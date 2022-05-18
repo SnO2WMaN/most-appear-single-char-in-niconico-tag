@@ -1,0 +1,7 @@
+[devshell]
+packages = ["poetry"]
+
+[[commands]]
+name = "generate"
+help = "update result.txt"
+command = "poetry run python ./generate.py | sort -rn > $PRJ_ROOT/result.txt"

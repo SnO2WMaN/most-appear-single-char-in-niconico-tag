@@ -25,15 +25,8 @@
           };
         in
         pkgs.devshell.mkShell {
-          devshell.packages = with pkgs; [
-            poetry
-          ];
-          commands = [
-            {
-              name = "generate";
-              help = "update result.txt";
-              command = "poetry run python ./fetch.py | sort -rn > $PRJ_ROOT/result.txt";
-            }
+          imports = [
+            (pkgs.devshell.importTOML ./devshell.toml)
           ];
         };
     });
