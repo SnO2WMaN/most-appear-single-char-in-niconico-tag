@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "what-is-best-one-char-in-niconico"
+version = "0.1.0"
+description = ""
+authors = ["SnO2WMaN <me@sno2wman.net>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

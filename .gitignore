@@ -1,0 +1,4 @@
+**/.direnv/
+**/.venv
+
+.vscode/settings.json
